@@ -18,8 +18,10 @@ bootstrap.py:
    - loadData() method which loads data from clubs.json into database
    - scrape_load_data() method which scraped and loaded the given 200 clubs into database
 
-app.py:
-   GET: 
+app.py
+
+   GET:
+      
       - '/api/user/<username>'  returns a given user's profile
       
       - '/api/clubs' returns information for all clubs
@@ -29,6 +31,7 @@ app.py:
       - '/api/tag_count' returns clubs with their tag count
    
    POST:
+      
       - '/api/clubs' creates a new club if code is available
          Request Body Payload example: 
          {
@@ -39,13 +42,16 @@ app.py:
          }
       
       - '/api/<club>/favorite' a specified user favorites a club, cannot favorite > 1 time
+         
          Request Body Payload example:
          {
             "id": "josh"
          }
    
    PATCH:
+      
       - '/api/clubs/<code>' modifies club specified by code. Name, descrip, tags modifiable
+         
          Request Body Payload examples:
          {
             "name": "Locust Labs New Name",
