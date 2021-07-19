@@ -1,4 +1,4 @@
-# Penn Labs Backend Challenge Spring 2021
+# Flask Rest API
 
 ## Documentation
 
